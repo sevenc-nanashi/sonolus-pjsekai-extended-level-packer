@@ -1,1 +1,4 @@
-export type PackOptions = object
+export type PackOptions = {
+    chart?: File
+    offset: number
+}
