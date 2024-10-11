@@ -75,7 +75,7 @@ const onClose = () => {
         <br />
         Packer: <br />
         Version {{ appVersion }} <br />
-        <VLink url="https://github.com/Sonolus/sonolus-level-packer" />
+        <VLink url="https://github.com/NonSpicyBurrito/sonolus-pjsekai-level-packer" />
     </p>
 
     <form @submit.prevent="onPack">
