@@ -112,9 +112,9 @@ const onClose = () => {
 
             <VFileField v-model="cover" label="Cover" accept="image/*" />
 
-            <VFileField v-model="bgm" label="Bgm" accept="audio/*" />
+            <VFileField v-model="bgm" label="Bgm" />
 
-            <VFileField v-model="preview" label="Preview" accept="audio/*" />
+            <VFileField v-model="preview" label="Preview" />
 
             <VFileField v-model="chart" label="Chart (SUS)" accept=".sus,.txt" />
 

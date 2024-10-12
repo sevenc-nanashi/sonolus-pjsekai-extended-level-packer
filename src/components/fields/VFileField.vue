@@ -3,7 +3,7 @@ import VField from './VField.vue'
 
 defineProps<{
     label: string
-    accept: string
+    accept?: string
 }>()
 
 const modelValue = defineModel<File | undefined>({ required: true })
