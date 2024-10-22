@@ -7,6 +7,7 @@ defineProps<{
     min?: number
     max?: number
     step?: number
+    required?: boolean
 }>()
 
 const modelValue = defineModel<number>({ required: true })
@@ -22,6 +23,7 @@ const modelValue = defineModel<number>({ required: true })
             :min
             :max
             :step
+            :required
         />
     </VField>
 </template>

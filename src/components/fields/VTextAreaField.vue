@@ -5,6 +5,7 @@ defineProps<{
     label: string
     placeholder: string
     maxlength?: number
+    required?: boolean
 }>()
 
 const modelValue = defineModel<string>({ required: true })
@@ -18,6 +19,7 @@ const modelValue = defineModel<string>({ required: true })
             type="text"
             :placeholder
             :maxlength
+            :required
         />
     </VField>
 </template>

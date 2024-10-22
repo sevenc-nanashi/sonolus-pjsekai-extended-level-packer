@@ -1,6 +1,5 @@
 **/*.*
 
-!env.d.ts
 !eslint.config.js
 !index.html
 !README.md

@@ -4,6 +4,7 @@ import VField from './VField.vue'
 defineProps<{
     label: string
     accept?: string
+    required?: boolean
 }>()
 
 const modelValue = defineModel<File | undefined>({ required: true })
@@ -20,6 +21,7 @@ const onChange = (e: Event) => {
             :class="modelValue ? 'text-text-normal' : 'italic text-text-disabled'"
             type="file"
             :accept
+            :required
             @change="onChange"
         />
     </VField>
