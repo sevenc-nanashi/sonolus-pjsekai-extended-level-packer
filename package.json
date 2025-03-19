@@ -11,12 +11,12 @@
     "build": "vite build"
   },
   "dependencies": {
-    "@sonolus/core": "~7.9.3",
-    "@sonolus/free-pack": "~1.1.5",
+    "@sonolus/core": "~7.12.0",
+    "@sonolus/free-pack": "~1.1.6",
     "file-saver": "^2.0.5",
     "jszip": "^3.10.1",
     "pako": "^2.1.0",
-    "sonolus-pjsekai-engine": "~1.8.2",
+    "sonolus-pjsekai-engine": "~1.8.3",
     "vue": "^3.5.12"
   },
   "devDependencies": {
