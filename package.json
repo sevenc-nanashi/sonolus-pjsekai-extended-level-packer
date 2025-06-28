@@ -16,7 +16,7 @@
     "file-saver": "^2.0.5",
     "jszip": "^3.10.1",
     "pako": "^2.1.0",
-    "sonolus-pjsekai-engine": "~1.8.3",
+    "sonolus-pjsekai-engine": "~1.8.8",
     "vue": "^3.5.12"
   },
   "devDependencies": {
