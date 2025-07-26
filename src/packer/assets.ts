@@ -1,7 +1,4 @@
-import type { Database } from '@sonolus/core'
-import _db from '@sonolus/free-pack/pack/db.json'
-
-export const db = _db as Database
+export { default as db } from '@sonolus/free-pack/pack/db.json'
 
 export const repository = Object.entries(
     import.meta.glob('@sonolus/free-pack/pack/repository/*', {
