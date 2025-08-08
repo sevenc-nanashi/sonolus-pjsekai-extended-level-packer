@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { version } from '@sonolus/core'
-import { version as engineVersion } from 'sonolus-pjsekai-engine'
 import { ref } from 'vue'
 import { version as appVersion } from '../package.json'
 import VLink from './components/VLink.vue'
@@ -58,24 +57,23 @@ const onClose = () => {
 </script>
 
 <template>
-    <h1 class="text-center text-xl font-bold sm:text-3xl">Sonolus PJSekai Level Packer</h1>
+    <h1 class="text-center text-xl font-bold sm:text-3xl">
+        Sonolus PJSekai Extended (Chart Cyanvas) Level Packer
+    </h1>
 
     <p>
-        Pack your Project Sekai: Colorful Stage! levels into Sonolus collection packages. <br />
-        For publishing and sharing your PJSekai levels, take a look at:
-        <VLink url="https://cc.sevenc7c.com" /> <br />
+        Pack your Chart Cyanvas levels into Sonolus collection packages. <br />
         <br />
         Sonolus: <br />
         Version {{ version.sonolus }} <br />
         <VLink url="https://sonolus.com" /> <br />
         <br />
         Engine: <br />
-        Version {{ engineVersion }} <br />
-        <VLink url="https://github.com/NonSpicyBurrito/sonolus-pjsekai-engine" /> <br />
+        <VLink url="https://github.com/sevenc-nanashi/sonolus-pjsekai-engine-extended" /> <br />
         <br />
         Packer: <br />
         Version {{ appVersion }} <br />
-        <VLink url="https://github.com/NonSpicyBurrito/sonolus-pjsekai-level-packer" />
+        <VLink url="https://github.com/sevenc-nanashi/sonolus-pjsekai-extended-level-packer" />
     </p>
 
     <form @submit.prevent="onPack">
@@ -117,7 +115,12 @@ const onClose = () => {
 
             <VFileField v-model="preview" label="Preview" />
 
-            <VFileField v-model="chart" label="Chart (SUS)" accept=".sus,.txt" required />
+            <VFileField
+                v-model="chart"
+                label="Chart (USC or SUS)"
+                accept=".usc,.sus,.txt"
+                required
+            />
 
             <VNumberField
                 v-model="offset"

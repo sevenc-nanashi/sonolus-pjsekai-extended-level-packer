@@ -7,6 +7,7 @@ import arraybuffer from 'vite-plugin-arraybuffer'
 
 export default defineConfig({
     plugins: [vue(), arraybuffer()],
+    base: '/sonolus-pjsekai-extended-level-packer',
 
     css: {
         postcss: {

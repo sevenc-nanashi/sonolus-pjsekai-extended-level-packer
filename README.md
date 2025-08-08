@@ -1,5 +1,5 @@
-# Sonolus PJSekai Level Packer
+# Sonolus PJSekai Extended Level Packer
 
-Pack your Project Sekai: Colorful Stage! levels into Sonolus collection packages.
+Pack your Chart Cyanvas levels into Sonolus collection packages.
 
-Available at: https://sonolus-pjsekai-level-packer.pages.dev
+Available at: (WIP)
