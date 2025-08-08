@@ -5,7 +5,7 @@ import type { PackLevelData } from '.'
 export const packLevelData: PackLevelData = async ({ chart, offset }) => {
     if (!chart) throw new Error('No chart file selected')
 
-    const usc = anyToUSC(await chart.bytes())
+    const usc = anyToUSC(new Uint8Array(await chart.arrayBuffer()))
     const levelData = uscToLevelData(usc.usc, offset)
 
     return { type: 'json', data: levelData }
